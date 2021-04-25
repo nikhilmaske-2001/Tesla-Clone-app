@@ -1,17 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
-import CarItem from './components/CarItem';
+import { StyleSheet, View } from 'react-native';
+import CarList from './components/CarList';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem
-        name="Model S"
-        tagline="Order Online for"
-        taglineCTA="Touchless Delievery"
-        image={require("../TeslaClone/assets/images/ModelS.jpeg")} />
-      <StatusBar style="auto" />
+      <CarList />
     </View>
   );
 }
